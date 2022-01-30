@@ -65,6 +65,42 @@ body.lock{
     width: 100%;
 }
 
+.header-burger{
+    display:none;
+}
+
+@media(max-width: 767px)
+{
+    .header-burger{
+        display: block;
+        position: relative;
+        width:30px;
+        height:20px;
+    }
+    .header-burger span{
+        position: absolute;
+        background-color: black;
+        left:0;
+        width:100%;
+        height:2px;
+        top:9px;  
+    }
+    .header-burger:before,
+    .header-burger:after{
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height:2px;
+        left:0;
+    }
+    .header-burger:before{
+        top: 0;
+    }
+    .header-burger:after{
+        bottom: 0;
+    }
+} 
 .hr-line {
 
     padding: 0;
@@ -176,51 +212,6 @@ body.lock{
     border-radius: 10px;
 }
 
-.title-projects{
-    font-weight: bold;
-    display: block;
-    color: white;
-    font-family: 'IBM Plex Serif', serif;
-    font-size:20px;
-}
-
-/*.img-projects_overlay{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    width: 50%;
-    top:0;
-    left: 0;
-    !*height: 100%;*!
-    color: #ffffff;
-    font-family: 'IBM Plex Serif', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.8s;
-}*/
-.img-projects_overlay--blur{
-    backdrop-filter: blur(10px);
-}
-
-.img-projects_overlay > * {
-    transform: translateY(30px);
-    transition: transform 0.8s;
-}
-.img-projects_overlay:hover > * {
-    transform: translateY(0);
-}
-.img-projects_overlay:hover {
-    opacity: 1;
-}
-.description-projects{
-    display: block;
-    color: white;
-    font-family: 'IBM Plex Serif', serif;
-    font-size:20px;
-}
 
 
 /******************************************************* Contact me **********************************************/
