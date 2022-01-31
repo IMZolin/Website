@@ -38,7 +38,7 @@ body.lock {
   .nav-links {
     text-align: center;
     width: 100%;
-  
+    
     ul li {
       list-style: none;
       display: inline-block;
@@ -72,6 +72,13 @@ body.lock {
   }
   
   @media (max-width: 767px) {
+    .nav-links{
+      ul li
+      {
+      display: none;
+    }
+  }
+
     .header-burger {
       display: block;
       position: relative;
