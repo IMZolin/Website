@@ -1,4 +1,9 @@
 /******************************************************* Home **********************************************/
+body{
+  background-color: floralwhite;
+  font-family: 'IBM Plex Serif',serif;
+}
+index,
 body.lock {
   overflow: hidden;
 }
@@ -120,13 +125,11 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   margin-top: 120px;
-  height: 620px;
+  height: 795px;
   width: 100%;
   left: 0;
   right: 0;
 }
-
-/******************************************************* About me **********************************************/
 .social-networks {
   /*text-align: center;*/
   bottom: 10px;
@@ -139,15 +142,21 @@ body.lock {
   padding: 1rem;
 }
 
+/******************************************************* About me **********************************************/
+@media (max-width: 767px) {
+  .about-me .inf-about{
+    display:none;
+  }
+}
 .about-me {
   background-color: floralwhite;
 }
-
 .title-about-me {
   color: black;
   text-align: center;
   font-family: 'IBM Plex Serif',serif;
   font-size: 30px;
+  margin-bottom: 1%;
 }
 
 .about-me-born, .about-me-university, .about-me-hobbies-skills {
@@ -164,8 +173,8 @@ body.lock {
 }
 
 .img-sea {
-  margin-top: 15px;
   border-radius: 10px;
+  width: 27%;
 }
 
 .inf-about .born {
@@ -187,6 +196,37 @@ body.lock {
 }
 
 /******************************************************* My projects **********************************************/
+@media (max-width: 692px) {
+  .col-lg-4-mt-4{
+    width: 100%;
+  }
+}
+.col-lg-4-mt-4{
+  width: 20%;
+}
+.container-mt-3{
+  display: inline;
+  list-style: none;
+}
+.btn-success{
+  border: 1px solid #333; /* Рамка */
+  display: inline-block;
+  padding: 5px 15px; /* Поля */
+  text-decoration: none; /* Убираем подчёркивание */
+  color: #000; /* Цвет текста */
+}
+.btn-success:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+  background: linear-gradient(to bottom,#ffffff , #ffffb7); /* Градиент */
+  /*color: #a00;*/
+}
+.my-projects{
+  font-family: 'IBM Plex Serif',serif;
+}
+.card-img-top{
+  border-radius: 1%;
+  width:100%;
+}
 .title-my-projects {
   display: block;
   color: black;
@@ -195,12 +235,37 @@ body.lock {
   font-size: 30px;
 }
 
-.img-projects {
-  display: block;
-  width: 50%;
-  border-radius: 10px;
+/******************************************************* Blog **********************************************/
+.my-blog{
+  font-family: 'IBM Plex Serif',serif;
 }
-
+.title-my-blog {
+  color: black;
+  text-align: center;
+  font-family: 'IBM Plex Serif',serif;
+  font-size: 30px;
+}
+.servicesText.card {
+  height: 280px;
+  cursor: pointer;
+}
+.servicesIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .servicesIcon {
+  color: #008000;
+}
+.servicesText:hover {
+  border: 1px solid #008000;
+}
+.row{
+  display: inline;
+}
 /******************************************************* Contact me **********************************************/
 .title-contact-me {
   color: black;
@@ -212,7 +277,7 @@ body.lock {
 .contact-me {
   height: 400px;
   background-color: floralwhite;
-  margin-bottom: 30px;
+  /*margin-bottom: 10%;*/
 }
 
 form {
@@ -222,14 +287,14 @@ form {
           box-shadow: 0 4px 16px #ccc;
   padding: 10px;
   letter-spacing: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 20%;
 }
 
-.box {
-  /*position: relative;*/
+/*.box {
+  !*position: relative;*!
   position: relative;
   height: 450px;
-}
+}*/
 
 .box .form-label {
   position: absolute;
@@ -264,8 +329,7 @@ form {
   resize: none;
 }
 
-/*
-  .form-control:focus{
+/*  .form-control:focus{
       border-bottom: 1px solid #1a73a8;
   }
   .form-control:focus ~.form-label{
@@ -287,4 +351,15 @@ form .submit {
 form .submit:hover {
   background-color: blanchedalmond;
   opacity: .8;
+}
+.footer{
+  position: relative;
+  text-align: center;
+  margin-top:-20%;
+}
+.footer ul li {
+  margin-left: -20px;
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
 }

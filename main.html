@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ivan Zolin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Josefin+Sans:wght@200;400&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,600&family=Josefin+Sans:wght@200;400&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,600&family=Josefin+Sans:wght@200;400&family=Merriweather&family=Red+Hat+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--<h2>About me</h2>-->
+<div class="wrapper">
+    <section class = "header lock-padding">
+        <!--    <h1 >Ivan Zolin's official website</h1>-->
+        <div class = "name-link">
+            <li><a data-goto=".cover-image" href="">Ivan Zolin's official website</a></li>
+        </div>
+        <div clas="header-burger">
+            <span></span>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a data-goto=".cover-image" href = "#">HOME</a></li>
+                    <li><a data-goto=".about-me" href = "#" class="about link">ABOUT ME</a></li>
+                    <li><a data-goto=".my-projects" href = "#">MY PROJECTS</a></li>
+                    <li><a data-goto=".my-blog" href = "#">MY BLOG</a></li>
+                    <li><a data-goto=".contact-me" href = "#">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="hr-line">
+    </section>
+    <section class="cover-image" style="background-image: url(images/cover.jpg);">
+        <div class="social-networks">
+            <ul>
+                <li><a href = "https://www.linkedin.com/in/ivan-zolin-4474b0233/"><img src="images/linkedin.png" width="30"/></a></li>
+                <li><a href = "https://github.com/IMZolin"><img src="images/github.png" width="30"/></a></li>
+                <li><a href = "https://www.instagram.com/zolin5269/" ><img src = "images/instagram.png" width="30"/></a></li>
+                <li><a href = "https://twitter.com/zolin5269"><img src="images/twitter.png" width="30"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="about-me">
+        <h1 class="title-about-me"> About me </h1>
+        <div class="inf-about">
+            <img class="img-sea" src="images/sea.jpg" width="70%%" align="right" />
+            <div class="born">
+                <h3 class="about-me-born">Main specifications</h3>
+                I was born in Kemerovo in Russia in 06.09.2002.
+            </div>
+            <div class="university">
+                <h3 class="about-me-university">University</h3>
+                <br/>Peter the Great St. Petersburg Polytechnic University '24<br/>Status - Student (Bachelor)<br/>Department of Applied Mathematics and Computer Science
+            </div>
+            <div class="hobbies-skills">
+                <h3 class="about-me-hobbies-skills">Hobbies and skills</h3>
+                <br/>
+                Hobbies: playing in a piano, taking pictures with camera and phone, programming,
+                <br/>
+                learning languages, playing chess, reading books,
+                <br/>
+                studying math and other subjects of natural science.
+                <br/>
+                Skills: C, HTML,CSS, JS, MATLAB, LateX
+            </div>
+        </div>
+
+    </section>
+    <section class="my-projects">
+        <h1 class="title-my-projects"> My projects </h1>
+        <div class="name-my-projects">
+            <!-- <img class="img-projects freelancer" src="images/freelancer.jpg" />
+            <img class="img-projects engine" src="images/engine.jpg"  />          -->
+        </div>
+    </section>
+    <section class="my-blog">
+        <h1 class="title-my-blog"> My blog </h1>
+        <div class="name-my-blog">
+            <!-- <img class="img-projects freelancer" src="images/freelancer.jpg" />
+            <img class="img-projects engine" src="images/engine.jpg"  />          -->
+        </div>
+    </section>
+    <section class="contact-me">
+        <h1 class="title-contact-me"> Contact me </h1>
+        <div class="box">
+            <form>
+                <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                <label class="form-label">Enter your name</label><br/>
+                <input type="email" name="email" class="form-control" placeholder="Email"  required="required">
+                <label class="form-label">Enter your email</label><br/>
+                <textarea name="message" class="form-control" placeholder="Message" required="required"></textarea>
+                <label class="form-label">Message</label><br/>
+                <input type="submit" name="" class="form-control submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </section>
+</div>
+
+
+
+<script src="js/scroll.js"></script>
+</body>
+</html>

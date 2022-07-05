@@ -1,0 +1,26 @@
+<section class="about-me">
+        <h1 class="title-about-me"> About me </h1>
+        <div class="inf-about">
+            <img class="img-sea" src="images/about.jpg" align="right" />
+            <div class="born">
+                <h3 class="about-me-born">Main specifications</h3>
+                I was born in Kemerovo in Russia in 06.09.2002.
+            </div>
+            <div class="university">
+                <h3 class="about-me-university">University</h3>
+                <br/>Peter the Great St. Petersburg Polytechnic University '24<br/>Status - Student (Bachelor)<br/>Department of Applied Mathematics and Computer Science
+            </div>
+            <div class="hobbies-skills">
+                <h3 class="about-me-hobbies-skills">Hobbies and skills</h3>
+                <br/>
+                Hobbies: playing in a piano, taking pictures with camera and phone, programming,
+                <br/>
+                learning languages, playing chess, reading books,
+                <br/>
+                studying math and other subjects of natural science.
+                <br/>
+                Skills: C, HTML,CSS, JS, MATLAB, LateX
+            </div>
+        </div>
+
+    </section>
